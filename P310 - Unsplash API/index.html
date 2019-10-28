@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/305c3deb2c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="sizes">Select size</label>
+              <select id="sizes" class="form-control">
+                <option value="raw">Raw</option>
+                <option value="full">Full</option>
+                <option value="regular">Regular</option>
+                <option selected value="small">Small</option>
+                <option value="thumb">Thumb</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <input
+              type="text"
+              placeholder="Search word..."
+              class="form-control"
+              id="query"
+            />
+
+            <button id="sendBtn" class="btn btn-outline-primary btn-block mt-3">
+              Search
+            </button>
+          </div>
+          <div class="col-12 ">
+            <ul
+              class="pagination pagination-lg mt-3 justify-content-center"
+              id="pagination"
+            ></ul>
+          </div>
+        </div>
+
+        <div class="row my-5 justify-content-between" id="photos_list"></div>
+      </div>
+    </section>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
